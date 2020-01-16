@@ -1,0 +1,4 @@
+docker build -t front .
+docker run -p 80:5000 front
+
+Exercise 1.10: Congratulations! You configured your ports correctly!

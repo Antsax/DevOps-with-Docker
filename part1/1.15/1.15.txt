@@ -1,0 +1,4 @@
+docker build -t test .
+docker tag test antsax/ohtuproject
+docker login 
+docker push antsax/ohtuproject
