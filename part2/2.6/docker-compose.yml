@@ -1,0 +1,28 @@
+version: '3.5'
+
+services: 
+    backend:
+        build: ./back
+        ports:
+            - 8000:8000
+        environment: 
+            - REDIS=redis
+            - DB_USERNAME=testi
+            - DB_PASSWORD=testinen
+            - DB_NAME=testiDB
+            - DB_HOST=db
+
+    frontend:
+        build: ./front
+        ports:
+            - 5000:5000
+
+    redis:
+        image: redis
+
+    db:
+        image: postgres
+        environment: 
+            - POSTGRES_USER=testi
+            - POSTGRES_PASSWORD=testinen
+            - POSTGRES_DB=testiDB
