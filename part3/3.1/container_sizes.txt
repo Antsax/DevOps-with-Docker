@@ -1,0 +1,9 @@
+before optimization:
+
+backend - 326MB
+frontend - 520MB
+
+after optimization:
+
+backend - 205MB
+frontend - 399MB
