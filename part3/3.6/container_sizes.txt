@@ -1,0 +1,9 @@
+before mutli-staging:
+
+backend - 326MB
+frontend - 520MB
+
+after multi-staging:
+
+backend - 20.3MB
+frontend - 198MB
